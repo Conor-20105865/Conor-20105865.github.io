@@ -1,0 +1,18 @@
+.wrapper {
+  color: #b74b4b;
+  font-size: 20px;
+}
+
+.wrapper p {
+  color: green;
+}
+
+.wrapper:hover {
+  color: #b74b4b;
+  cursor: pointer;
+}
+
+h2,
+h3 {
+  font-size: 30px;
+}
