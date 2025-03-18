@@ -20,16 +20,16 @@ body {
   text-decoration: none;
 }
 
-#skills {
+#Projects #skills {
   margin-top: 100px;
   font-size: 30px;
 }
 
-#skills ul {
+#Projects #skills ul {
   list-style: none;
 }
 
-#skills ul li {
+#Projects #skills ul li {
   font-size: 2rem;
   margin-bottom: 10px;
   position: relative;
@@ -38,7 +38,7 @@ body {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-#skills ul li:before {
+#Projects #skills ul li:before {
   content: "";
   position: absolute;
   top: 5px;
