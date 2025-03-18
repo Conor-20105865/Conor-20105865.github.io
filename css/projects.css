@@ -39,7 +39,7 @@ body {
 }
 
 section#Projects h2 {
-    color: #b74b4b;
+    color: #b74b4b !important;
 }
 
 #Projects ul li:before {
