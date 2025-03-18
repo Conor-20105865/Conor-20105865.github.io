@@ -39,6 +39,10 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
+#Projects h2 {
+    color: #b74b4b;
+}
+
 #Projects ul li:before {
     content: "";
     position: absolute;
