@@ -72,3 +72,7 @@ a {
 a:hover {
     text-shadow: 0 0 10px #b74b4b, 0 0 20px #74b4bb;
 }
+
+ul{
+    color: white;
+}
