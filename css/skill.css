@@ -71,34 +71,3 @@ a {
 a:hover {
   text-shadow: 0 0 10px #b74b4b, 0 0 20px #74b4bb;
 }
-
-
-.Projects {
-  margin-top: 100px;
-  font-size: 30px;
-}
-
-.Projects ul {
-  list-style: none;
-}
-
-.Projects ul li {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
-  color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-.Projects ul li:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #b74b4b;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #b74b4b, 0 0 20px #b74b4b;
-}
