@@ -27,6 +27,7 @@ body {
 
 #Projects ul {
     list-style: none;
+    color: white;
 }
 
 #Projects ul li {
