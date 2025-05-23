@@ -12,8 +12,12 @@
     cursor: pointer;
 }
 
+.wrapper:hover a {
+    color: #ffcccc;
+}
 h2,
 h3 {
-    font-size: 30px;
-    padding-left: 110px;
+    font-size: 2rem;
+    padding: 0;
+    text-align: center; /* Center-align for better responsiveness */
 }

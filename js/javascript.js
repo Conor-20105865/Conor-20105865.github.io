@@ -1,51 +1,39 @@
 console.log("JavaScript is running");
 
-const texts = ["Software Developerㅤ", "Web Designerㅤ", "Tech Enthusiastㅤ"];
-let index = 0;
+     const texts = ["Software Developerㅤ", "Web Designerㅤ", "Tech Enthusiastㅤ"];
+     let index = 0;
+     let typingIndex = 0;
+     let currentText = "";
+     let isDeleting = false;
 
-let typingIndex = 0;
-let currentText = "";
-let isDeleting = false;
-let pauseBetweenTexts = false; // Flag for pause
+     function type() {
+         const span = document.querySelector(".typing-text span");
+         if (!span) return;
 
-function type() {
-  const span = document.querySelector(".typing-text span");
+         if (isDeleting) {
+             currentText = currentText.slice(0, -1);
+         } else {
+             currentText = texts[index].slice(0, typingIndex + 1);
+         }
 
-  // Check if paused
-  if (pauseBetweenTexts) {
-    setTimeout(() => {
-      pauseBetweenTexts = false; // Reset pause
-      isDeleting = true; // Start delete after pause
-      type(); //starts deleting
-    }, 2000); // 2000 milliseconds
-    return; // Exit func
-  }
+         span.textContent = currentText;
 
-  if (isDeleting) {
-    currentText = texts[index].substring(0, typingIndex--);
-    span.textContent = currentText;
+         // Move to next word
+         if (!isDeleting && currentText === texts[index]) {
+             isDeleting = true;
+             setTimeout(type, 2000); // Delay before deleting
+             return;
+         }
 
-    // If the text has been fully deleted
-    if (typingIndex < 0) {
-      isDeleting = false; // Switch to typing mode
-      index = (index + 1) % texts.length; // next text
-      // Set pause only if it's going back to the first text
-      if (index === 0) {
-        pauseBetweenTexts = true; // pause for 2 seconds after full loop
-      }
-    }
-  } else {
-    currentText = texts[index].substring(0, typingIndex++);
-    span.textContent = currentText;
+         // Finish deleting
+         if (isDeleting && currentText === "") {
+             isDeleting = false;
+             typingIndex = 0;
+             index = (index + 1) % texts.length;
+         }
 
-    // If the entire text has been typed
-    if (typingIndex === texts[index].length) {
-      pauseBetweenTexts = true; // Pause for 2 seconds after the full text typed
-    }
-  }
+         typingIndex = isDeleting ? typingIndex - 1 : typingIndex + 1;
+         setTimeout(type, isDeleting ? 100 : 150);
+     }
 
-  setTimeout(type, isDeleting ? 140 : 200); //typing speed
-}
-
-// Initial call
-type();
+     document.addEventListener("DOMContentLoaded", type);
