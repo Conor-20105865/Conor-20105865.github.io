@@ -40,7 +40,7 @@ button {
   margin-top: 15px;
   padding: 10px;
   font-size: 1rem;
-  background-color: #0066cc;
+  background-color: #cc0000;
   color: white;
   border: none;
   border-radius: 4px;
@@ -48,5 +48,5 @@ button {
 }
 
 button:hover {
-  background-color: #004999;
+  background-color: #ff0c0c;
 }
