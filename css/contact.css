@@ -21,3 +21,32 @@ h3 {
     padding: 0;
     text-align: center; /* Center-align for better responsiveness */
 }
+
+form {
+  max-width: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004999;
+}
