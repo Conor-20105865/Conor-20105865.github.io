@@ -10,36 +10,50 @@
 </head>
 
 <body>
-<header class="header">
-  <a href="index.html" class="logo">Conor Cunningham</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="education.html">Education</a>
-    <a href="contact.html" class="active">Contact</a>
-  </nav>
-</header>
-<br><br><br><br><br><br><br><br><br><br>
-<h2>Available Contacts</h2>
-<section id="contact">
-  <div class="wrapper">
-    <details name="accordian">
-      <summary>Emails</summary>
-      <a href="mailto:conorc312@gmail.com
-         ?subject=Saying%20hello%20from%20GFG">
-        Gmail
-      </a>
-    </details>
-  </div>
-  <br>
-  <div class="wrapper">
-    <details name="accordian">
-      <summary>Discord</summary>
-      <a href="https://discordapp.com/users/1153357597164978246">CNR</a>
-    </details>
-  </div>
-</section>
+  <header class="header">
+    <a href="index.html" class="logo">Conor Cunningham</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <h2>Available Contacts</h2>
+  <section id="contact">
+    <div class="wrapper">
+      <details name="accordian">
+        <summary>Emails</summary>
+        <a href="mailto:conorc312@gmail.com?subject=Saying%20hello%20from%20GFG">
+          Gmail
+        </a>
+      </details>
+    </div>
+    <br />
+    <div class="wrapper">
+      <details name="accordian">
+        <summary>Discord</summary>
+        <a href="https://discordapp.com/users/1153357597164978246">CNR</a>
+      </details>
+    </div>
+
+    <h2>Send Me a Message</h2>
+    <form action="https://formspree.io/f/mrbkgnga" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="_replyto" required /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
 </body>
 
