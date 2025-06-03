@@ -1,6 +1,10 @@
-console.log("JavaScript is running");
+console.log("Cybersecurity scripts active");
 
-     const texts = ["Software Developerㅤ", "Web Designerㅤ", "Tech Enthusiastㅤ"];
+     const texts = [ 
+          "Cyber Defenderㅤ", 
+          "Threat Analystㅤ", 
+          "Security Enthusiastㅤ"
+                    ];
      let index = 0;
      let typingIndex = 0;
      let currentText = "";
