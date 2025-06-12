@@ -20,6 +20,13 @@ body {
   scroll-behavior: smooth;
 }
 
+.home-img img {
+  width: 220px;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(183,75,75,0.4);
+}
+
+
 
 .container {
   max-width: 900px;

@@ -1,4 +1,4 @@
-/* contact.css - Improved to match site style */
+
 
 .wrapper {
     color: #b74b4b;
@@ -8,7 +8,7 @@
 }
 
 .wrapper p {
-    color: #74b4bb; /* changed from green to blue shade for consistency */
+    color: #74b4bb;
 }
 
 .wrapper:hover {
@@ -67,4 +67,23 @@ button {
 
 button:hover {
     background-color: #9f3f3f;
+}
+
+
+.wrapper details {
+    text-align: center;
+}
+.wrapper details summary:hover {
+    color: #ff7f7f;
+    text-shadow: 0 0 8px #ff7f7f;
+}
+
+.wrapper details summary {
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    color: #b74b4b;
+    display: list-item;
+    list-style: inside;
+    margin: 0 auto;
 }
