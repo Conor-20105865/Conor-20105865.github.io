@@ -1,18 +1,9 @@
-.wrapper {
-  color: #b74b4b;
-  font-size: 20px;
-}
-
 .wrapper p {
-  color: green;
+  color: #aad68c;
 }
 
-.wrapper:hover {
-  color: #b74b4b;
+.wrapper details summary {
+  font-weight: 600;
+  font-size: 1.2rem;
   cursor: pointer;
-}
-
-h2,
-h3 {
-  font-size: 30px;
 }
