@@ -78,6 +78,7 @@ ul li {
   padding-left: 20px;
   color: #eee;
   text-shadow: 0 0 8px rgba(255,255,255,0.15);
+  text-align: center;
 }
 
 ul li:before {

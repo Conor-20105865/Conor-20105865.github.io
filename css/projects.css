@@ -5,8 +5,10 @@
 
 #Projects ul li a {
     color: #eee;
+    text-align: center;
 }
 
 #Projects ul li a:hover {
     text-shadow: 0 0 10px #b74b4b, 0 0 20px #74b4bb;
+    text-align: center;
 }
