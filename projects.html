@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects</title>
+  <meta name="description" content="Selected software engineering, mobile development, embedded systems and cybersecurity projects by Conor Cunningham." />
+  <title>Projects | Conor Cunningham</title>
   <link rel="icon" type="image/png" href="images/icons8-access-control-78.png" />
-  <link rel="stylesheet" href="/css/css.css" />
-  <link rel="stylesheet" href="/css/projects.css" />
+  <link rel="stylesheet" href="css/css.css" />
+  <link rel="stylesheet" href="css/projects.css" />
 </head>
-
 <body>
-<header class="header">
-  <a href="index.html" class="logo">Conor Cunningham</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html" class="active">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="education.html">Education</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <header class="header">
+    <a href="index.html" class="logo">Conor Cunningham</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active" aria-current="page">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-
-<section id="Projects">
-  <h2 style="color: #b74b4b;">Projects</h2>
-  <ul>
-    <!--<li><a href="https://pardixlabs.github.io/">Pardix Labs - Local First Dev Tools</a></li>-->
-    <li><a href="https://github.com/Conor-20105865/KeyLog">Keylogger written in C</a></li>
-    <li><a href="https://github.com/Conor-20105865/Caesar">Caesar Cipher Translator in Java</a></li>
-    <li><a href="https://github.com/Conor-20105865/converter">Number System Converter</a></li>
-    <li>Personal disk analysis & forensic investigations</li>
-  </ul>
-</section>
-
-<div class="icon-credit">
-  <a target="_blank" href="https://icons8.com/icon/otZrGpDnsZg6/access-control">Access Control</a> icon by
-  <a target="_blank" href="https://icons8.com">Icons8</a>
-</div>
-
+  <main>
+    <section id="Projects">
+      <h1>Selected Projects</h1>
+      <ul>
+        <li>
+          <a href="https://github.com/Conor-20105865/web-api-ca" target="_blank" rel="noopener noreferrer"><strong>Full-stack Movies Application — React, Node.js, Express, MongoDB</strong></a>
+          <p>Built a movie discovery application with REST APIs, JWT login, protected routes and per-user reviews, favourites and playlists. Uses React, Mongoose and TMDB data.</p>
+        </li>
+        <li>
+          <a href="https://github.com/Conor-20105865/metro_system_app" target="_blank" rel="noopener noreferrer"><strong>Vienna Metro Route Planner — Java, JavaFX</strong></a>
+          <p>Implemented BFS, DFS and Dijkstra route-finding over a station graph, with CSV loading, avoided stations, transfer penalties and automated algorithm tests.</p>
+        </li>
+        <li>
+          <a href="https://github.com/Conor-20105865/ConflictGlobe" target="_blank" rel="noopener noreferrer"><strong>ConflictGlobe — Kotlin, Android</strong></a>
+          <p>Developed a local-records Android app with add/edit/delete functionality, searching, filtering, JSON persistence, data validation and unit tests.</p>
+        </li>
+        <li>
+          <a href="https://github.com/Conor-20105865/KeyLog" target="_blank" rel="noopener noreferrer"><strong>Cross-platform Input Monitoring Research — C</strong></a>
+          <p>Educational proof of concept investigating OS-level keyboard events, system permissions and privacy implications on Windows, Linux and macOS. Intended only for authorised lab environments.</p>
+        </li>
+        <li>
+          <a href="https://github.com/Conor-20105865/ESP32-S3-Dino-Run" target="_blank" rel="noopener noreferrer"><strong>ESP32-S3 Dino Run — Embedded Arduino/C++</strong></a>
+          <p>Implemented a game for a reflective LCD with button input, variable-height jumping, obstacles, collision detection, scoring and battery-level monitoring.</p>
+        </li>
+        <li>
+          <a href="https://github.com/Conor-20105865/Caesar" target="_blank" rel="noopener noreferrer"><strong>Caesar Cipher Translator — JavaFX</strong></a>
+          <p>Designed a graphical encoding/decoding tool with a customisable character shift and input handling to demonstrate classical cryptography.</p>
+        </li>
+        <li>
+          <a href="https://github.com/Conor-20105865/converter" target="_blank" rel="noopener noreferrer"><strong>Number System Converter — C</strong></a>
+          <p>Created a command-line tool for binary, decimal, octal and hexadecimal conversions using functions, bitwise operations and input validation.</p>
+        </li>
+        <li>
+          <strong>Digital Forensics &amp; System Hardening Labs</strong>
+          <p>Practised forensic disk-image analysis using Autopsy and The Sleuth Kit, alongside Windows/Linux security configurations and investigation exercises. These are coursework/lab activities rather than public repositories.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <div class="icon-credit">
+    <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/otZrGpDnsZg6/access-control">Access Control</a> icon by
+    <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a>
+  </div>
 </body>
-
-
-
 </html>

@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Website</title>
+  <meta name="description" content="Conor Cunningham's portfolio: cybersecurity, digital forensics, full-stack software engineering and student projects." />
+  <title>Conor Cunningham | Cybersecurity &amp; Software Portfolio</title>
   <link rel="icon" type="image/png" href="images/icons8-access-control-78.png" />
-  <link rel="stylesheet" href="/css/css.css" />
+  <link rel="stylesheet" href="css/css.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css" />
 </head>
-
 <body>
+  <header class="header">
+    <a href="index.html" class="logo">Conor Cunningham</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<header class="header">
-  <a href="index.html" class="logo">Conor Cunningham</a>
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="education.html">Education</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <main>
+    <section id="home" class="home">
+      <div class="home-img">
+        <img src="images/me.png" alt="Portrait of Conor Cunningham" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, it's <span>Conor</span></h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
+        <p>
+          Final-year Applied Computing student at South East Technological University,
+          specialising in Forensics &amp; Cybersecurity (expected graduation: 2027).
+          My projects cover security research, digital forensics, full-stack web development,
+          algorithms, Android and embedded systems.
+        </p>
+        <div class="social-icons" aria-label="Professional profiles">
+          <a href="https://www.linkedin.com/in/conor-cunningham-1a0010210/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/Conor-20105865" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="mailto:conorc312@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <a href="projects.html" class="btn">Explore Projects</a>
+        <a href="cv.html" class="btn">View CV</a>
+        <a href="contact.html" class="btn">Contact Me</a>
+      </div>
+    </section>
+  </main>
 
-<section id="home" class="home">
-  <div class="home-img">
-    <img src="/images/me.png" alt="me" />
+  <script src="js/javascript.js"></script>
+  <div class="icon-credit">
+    <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/otZrGpDnsZg6/access-control">Access Control</a> icon by
+    <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a>
   </div>
-  <div class="home-content">
-    <h1>Hi, it's <span>Conor</span></h1>
-    <h3 class="typing-text">I'm a <span></span></h3>
-    <p>
-      Cybersecurity isn’t a job — it’s a mission.<br />Protecting digital worlds with code and curiosity.
-    </p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/conor-cunningham-1a0010210/" target="_blank"><i class="fa-brands fa-linkedin"></i
-      ></a>
-      <a href="https://github.com/Conor-20105865" target="_blank"><i class="fa-brands fa-github"></i
-      ></a>
-      <a href="https://x.com/conorc312" target="_blank"><i class="fa-brands fa-twitter"></i
-      ></a>
-      <a href="https://www.instagram.com/cnr_cnghm/" target="_blank"><i class="fa-brands fa-instagram"></i
-      ></a>
-      <a href="https://www.youtube.com/@conorc312" target="_blank"><i class="fa-brands fa-youtube"></i
-      ></a>
-      <a href="https://leetcode.com/u/lPjvNfJCpX/" target="_blank"><i class="cib-leetcode"></i></a>
-
-    </div>
-    <a href="contact.html" class="btn"> Contact Me </a>
-  </div>
-</section>
-
-<script src="/js/javascript.js"></script>
-<!--Link to the js-->
-
-<div class="icon-credit">
-  <a target="_blank" href="https://icons8.com/icon/otZrGpDnsZg6/access-control">Access Control</a> icon by
-  <a target="_blank" href="https://icons8.com">Icons8</a>
-</div>
-
 </body>
-
 </html>

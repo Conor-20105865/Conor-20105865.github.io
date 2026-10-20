@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
+  <meta name="description" content="Contact Conor Cunningham about cybersecurity, software engineering and graduate opportunities." />
+  <title>Contact | Conor Cunningham</title>
   <link rel="icon" type="image/png" href="images/icons8-access-control-78.png" />
-  <link rel="stylesheet" href="/css/css.css" />
-  <link rel="stylesheet" href="/css/contact.css" />
+  <link rel="stylesheet" href="css/css.css" />
+  <link rel="stylesheet" href="css/contact.css" />
 </head>
-
 <body>
   <header class="header">
     <a href="index.html" class="logo">Conor Cunningham</a>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="skills.html">Skills</a>
       <a href="education.html">Education</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
     </nav>
   </header>
 
-  <h2>Available Contacts</h2>
-  <section id="contact">
-    <div class="wrapper">
-      <details name="accordian">
-        <summary>Emails</summary>
-        <a href="mailto:conorc312@gmail.com?subject=Saying%20hello%20from%20GFG">
-          Gmail
-        </a>
-      </details>
-    </div>
-    <br />
-    <div class="wrapper">
-      <details name="accordian">
-        <summary>Discord</summary>
-        <a href="https://discordapp.com/users/1153357597164978246">CNR</a>
-      </details>
-    </div>
+  <main>
+    <section id="contact">
+      <h1>Contact Conor</h1>
+      <p>I'm interested in opportunities across cybersecurity, digital forensics and software engineering. Feel free to get in touch about graduate roles or projects.</p>
+      <div class="wrapper">
+        <details open>
+          <summary>Email</summary>
+          <a href="mailto:conorc312@gmail.com?subject=Portfolio%20enquiry">conorc312@gmail.com</a>
+        </details>
+        <details>
+          <summary>Professional Profiles</summary>
+          <p><a href="https://www.linkedin.com/in/conor-cunningham-1a0010210/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <p><a href="https://github.com/Conor-20105865" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          <p><a href="cv.html">Current CV</a></p>
+        </details>
+      </div>
 
-    <h2>Send Me a Message</h2>
-    <form action="https://formspree.io/f/mrbkgnga" method="POST">
-      <label for="name">Your Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-
-      <label for="email">Your Email:</label><br />
-      <input type="email" id="email" name="_replyto" required /><br /><br />
-
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
+      <h2>Send Me a Message</h2>
+      <form action="https://formspree.io/f/mrbkgnga" method="POST">
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" autocomplete="name" required /><br /><br />
+        <label for="email">Your Email:</label><br />
+        <input type="email" id="email" name="_replyto" autocomplete="email" required /><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
   <div class="icon-credit">
-    <a target="_blank" href="https://icons8.com/icon/otZrGpDnsZg6/access-control">Access Control</a> icon by
-    <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/otZrGpDnsZg6/access-control">Access Control</a> icon by
+    <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a>
   </div>
-
 </body>
-
 </html>
